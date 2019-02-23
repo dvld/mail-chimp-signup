@@ -1,0 +1,27 @@
+{
+  "name": "mail-chimp-signup",
+  "version": "1.0.0",
+  "description": "Newsletter sign up form using the mailchimp api",
+  "main": "server.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvld/mail-chimp-signup.git"
+  },
+  "author": "Niko Roberts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvld/mail-chimp-signup/issues"
+  },
+  "homepage": "https://github.com/dvld/mail-chimp-signup#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

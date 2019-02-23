@@ -1,0 +1,31 @@
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Staatliches', cursive;
+*/
+
+body {
+  background: rgb(29, 29, 29);
+}
+
+#title-icon {
+  color: #fff;
+}
+
+#title-text {
+  color: #fff;
+}
+
+#nav-icon {
+  color: #fff;
+  margin-right: .5rem;
+}
+
+li.active {
+  background-color: rgb(138, 138, 138);
+  border-radius: 10px;
+}
+
+.sidebar {
+  margin: 20px;
+}
