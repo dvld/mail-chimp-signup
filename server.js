@@ -67,7 +67,7 @@ app.post('/signup', (req, res) => {
 // Ping Heroku App every 5 minutes (300000 milliseconds)
 
 setInterval(() => {
-    http.get('https://pure-badlands-95180.herokuapp.com/');
+    http.get('http://pure-badlands-95180.herokuapp.com/');
 }, 300000); 
 
 // assign port
