@@ -24,12 +24,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 // signup route
 app.post('/signup', (req, res) => {
   const { name, email } = req.body;
-
+  
   // validate fields are filled
   if (!name || !email) {
     res.redirect('/failure.html');
     return;
   }
+  console.log(req.body);
 
   // construct request data
   const data = {
@@ -50,12 +51,13 @@ app.post('/signup', (req, res) => {
     url: 'https://us7.api.mailchimp.com/3.0/lists/7b32c9efd1',
     method: 'POST',
     headers: {
-      Authorization: `auth ${key}`
+      Authorization: key
     },
     body: postData
   }
-
+  
   request(options, (err, response, body) => {
+    console.log(options.headers.Authorization);
     if (err) {
       res.redirect('/failure.html');
       console.log(err);
@@ -69,6 +71,8 @@ app.post('/signup', (req, res) => {
     }
   });
 });
+
+
 
 // Ping Heroku App every 5 minutes (300000 milliseconds)
 
