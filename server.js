@@ -3,6 +3,7 @@
 const express = require('express');
 const request = require('request');
 const path = require('path');
+const http = require('http');
 
 // instantiate express app
 const app = express();
@@ -62,6 +63,12 @@ app.post('/signup', (req, res) => {
     }
   });
 });
+
+// Ping Heroku App every 5 minutes (300000 milliseconds)
+
+setInterval(() => {
+    http.get('https://pure-badlands-95180.herokuapp.com/');
+}, 300000); 
 
 // assign port
 const port = process.env.PORT || 5000;
