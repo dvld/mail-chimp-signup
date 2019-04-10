@@ -1,12 +1,13 @@
-
+require("dotenv").config();
 // dependencies
+const fs = require('fs');
 const express = require('express');
 const request = require('request');
 const path = require('path');
 const http = require('http');
 const keys = require('./keys');
 // console.log(keys);
-require("dotenv").config();
+
 const key = keys.mailchimp;
 // console.log(key);
 
