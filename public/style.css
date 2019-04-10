@@ -8,12 +8,29 @@ body {
   background: rgb(29, 29, 29);
 }
 
+#green-title {
+  color: #35f786;
+}
+
+#red-title {
+  color: #ee5f5f;
+}
+
+#trust-bar {
+  text-align: left;
+}
+
+#clickbank {
+  text-align: left;
+}
+
 #title-icon {
   color: #fff;
 }
 
-#title-text {
+.title-text {
   color: #fff;
+  font-weight: bold;
 }
 
 #nav-icon {
@@ -28,4 +45,12 @@ li.active {
 
 .sidebar {
   margin: 20px;
+}
+
+form {
+  width: auto;
+}
+
+.btn-primary {
+  background-color: #0cbedd;
 }

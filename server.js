@@ -51,11 +51,13 @@ app.post('/signup', (req, res) => {
   request(options, (err, response, body) => {
     if (err) {
       res.redirect('/failure.html');
+      console.log(err);
     } else {
       if (response.statusCode === 200) {
-        res.redirect('/success.html');
+        res.redirect('http://trckapp.com/551g9w55/nikommercelp');
       } else {
         res.redirect('/failure.html');
+        console.log(err);
       }
     }
   });
